@@ -1,0 +1,16 @@
+# Use PHP5 Single php.ini as default
+AddHandler application/x-httpd-php5s .php
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule sentiment-analysis.html data.php?page=1
+    RewriteRule index.html index.php?page=0
+    RewriteRule about.html about.php?page=1
+    RewriteRule careers.html careers.php?page=1
+    RewriteRule comming-soon.html comming_soon.php?page=1
+    RewriteRule contact.html contact.php?page=1
+    RewriteRule mobile-apps.html mobile.php?page=1
+    RewriteRule web-development.html web_development.php?page=1
+    RewriteRule start-project.html  start_project.php?page=1
+    RewriteRule labs.html  labs.php?page=1
+    RewriteRule management-consulting.html management_consulting.php?page=1
+</IfModule>
